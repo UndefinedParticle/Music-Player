@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <data>
+
+
+
+    </data>
+
+    <LinearLayout
+        android:background="@color/backgroundColor1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignParentTop="true"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/music_animation" />
+
+        <TextView
+            android:id="@+id/songName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Local Train - Kaisey Jiyun (Official)"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/be_vietnam_semibold"
+            android:maxLines="1"
+            android:ellipsize="marquee" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/currentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:padding="5dp"
+                android:layout_marginStart="35dp"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/totalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:padding="5dp"
+                android:layout_marginEnd="35dp"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/previousButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/previous_icon"
+                android:layout_marginEnd="35dp"
+                app:tint="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/playPauseButton"
+                android:background="@drawable/circle_bg"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:elevation="5dp"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/playIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:src="@drawable/play_icon"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/pauseIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:visibility="visible"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pause_icon"
+                    app:tint="@color/white" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/nextButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/next_icon"
+                android:layout_marginStart="35dp"
+                app:tint="@color/white" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</layout>

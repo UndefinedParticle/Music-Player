@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+
+    <color name="backgroundColor3">#D5715B</color>
+    <color name="backgroundColor2">#5EA25F</color>
+    <color name="backgroundColor1">#3445A1</color>
+    <color name="viewLineColor">#6A6868</color>
+    <color name="highlightColor">#5B0BE5</color>
+
+</resources>
